@@ -500,18 +500,108 @@
     footer a { color: rgba(255,255,255,0.5); }
 
     /* ── RESPONSIVE ── */
+    /* ── TABLET (max 1024px) ── */
+    @media (max-width: 1024px) {
+      .hero {
+        grid-template-columns: 1fr 1fr;
+        gap: 36px;
+        padding: 100px 5% 60px;
+        min-height: auto;
+      }
+      .hero h1 { font-size: 36px; }
+      .hero-card { padding: 24px; }
+      .about-grid { gap: 36px; }
+      .diff-inner { gap: 36px; }
+    }
+
+    /* ── MOBILE (max 768px) ── */
     @media (max-width: 768px) {
+      /* Nav */
+      nav { padding: 0 4%; }
+      .logo-text span { display: none; }
+
+      /* Hero */
       .hero {
         grid-template-columns: 1fr;
         text-align: center;
-        padding-top: 90px;
+        padding: 88px 5% 56px;
+        gap: 0;
+        min-height: auto;
       }
-      .hero p { margin-left: auto; margin-right: auto; }
-      .hero-cta { margin: 0 auto; }
+      .hero-tag { font-size: 11px; }
+      .hero h1 { font-size: 30px; margin-bottom: 16px; }
+      .hero p { margin-left: auto; margin-right: auto; font-size: 16px; }
+      .hero-cta {
+        margin: 0 auto;
+        display: inline-flex;
+        font-size: 15px;
+        padding: 13px 22px;
+      }
+      .check-list { text-align: left; max-width: 320px; margin-left: auto; margin-right: auto; }
       .hero-card { display: none; }
-      .about-grid { grid-template-columns: 1fr; gap: 32px; }
-      .diff-inner { grid-template-columns: 1fr; gap: 40px; }
+
+      /* Sections */
+      section { padding: 56px 5%; }
+
+      /* About */
+      .about-grid { grid-template-columns: 1fr; gap: 28px; }
+      .about-highlight { padding: 24px; font-size: 15px; }
+
+      /* Cards */
+      .cards { grid-template-columns: 1fr; gap: 14px; }
+      .card { padding: 22px; }
+
+      /* Diff */
+      .diff-inner { grid-template-columns: 1fr; gap: 36px; }
+      .diff-items { gap: 16px; }
+
+      /* Contact */
+      .contact-box { padding: 28px 20px; }
       .contact-info { grid-template-columns: 1fr; }
+      .cta-big { font-size: 20px !important; padding: 14px 20px; }
+
+      /* Typography */
+      h2 { font-size: 26px; }
+      .lead { font-size: 16px; }
+    }
+
+    /* ── SMALL MOBILE (max 480px) ── */
+    @media (max-width: 480px) {
+      nav { height: 56px; }
+      nav a.cta-nav { padding: 7px 14px; font-size: 13px; }
+
+      .hero { padding: 76px 4% 48px; }
+      .hero h1 { font-size: 26px; }
+      .hero p { font-size: 15px; }
+      .hero-cta { font-size: 14px; padding: 12px 18px; width: 100%; justify-content: center; }
+      .hero-tag { font-size: 10px; padding: 4px 10px; }
+
+      .check-list li { font-size: 14px; }
+
+      section { padding: 48px 4%; }
+
+      h2 { font-size: 24px; }
+      .lead { font-size: 15px; }
+
+      .card { padding: 18px; }
+      .card h3 { font-size: 15px; }
+      .card p { font-size: 13px; }
+
+      .diff-num { width: 32px; height: 32px; font-size: 14px; }
+      .diff-item-text h4 { font-size: 14px; }
+      .diff-item-text p { font-size: 13px; }
+
+      .contact-box { padding: 24px 16px; }
+      .cta-big { font-size: 18px !important; }
+
+      footer { font-size: 12px; padding: 20px 4%; }
+    }
+
+    /* ── VERY SMALL (max 360px) ── */
+    @media (max-width: 360px) {
+      .hero h1 { font-size: 22px; }
+      h2 { font-size: 21px; }
+      .cta-big { font-size: 16px !important; }
     }
   </style>
 </head>
