@@ -15,14 +15,14 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --navy: #1B2B4B;
-      --navy-light: #243660;
-      --orange: #E85D1A;
-      --orange-light: #F07340;
-      --cream: #F6F3EC;
-      --text: #1B2B4B;
-      --muted: #5A6478;
-      --border: rgba(27,43,75,0.12);
+      --navy: #2C3E55;
+      --navy-light: #364C66;
+      --orange: #D4581A;
+      --orange-light: #E06B30;
+      --cream: #F4F4F2;
+      --text: #1E2A38;
+      --muted: #6B7585;
+      --border: rgba(0,0,0,0.08);
     }
 
     html { scroll-behavior: smooth; }
@@ -132,8 +132,8 @@
 
     .hero-tag {
       display: inline-block;
-      background: rgba(232,93,26,0.2);
-      color: var(--orange-light);
+      background: rgba(255,255,255,0.12);
+      color: rgba(255,255,255,0.75);
       font-size: 12px;
       font-weight: 500;
       letter-spacing: 0.1em;
@@ -293,17 +293,19 @@
     .about-text p:last-child { margin-bottom: 0; }
 
     .about-highlight {
-      background: var(--navy);
+      background: #fff;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--orange);
       border-radius: 12px;
       padding: 32px;
-      color: rgba(255,255,255,0.85);
+      color: var(--text);
       font-size: 16px;
       line-height: 1.7;
     }
 
     .about-highlight strong {
-      color: var(--orange-light);
-      font-weight: 500;
+      color: var(--navy);
+      font-weight: 600;
     }
 
     /* ── SERVICES ── */
@@ -335,7 +337,7 @@
 
     .card-icon {
       width: 44px; height: 44px;
-      background: rgba(232,93,26,0.1);
+      background: #F0F0EE;
       border-radius: 10px;
       display: flex;
       align-items: center;
@@ -360,8 +362,8 @@
 
     /* ── DIFFERENTIATOR ── */
     .diff {
-      background: var(--navy);
-      color: #fff;
+      background: #F0F0EE;
+      color: var(--text);
     }
 
     .diff-inner {
@@ -373,9 +375,9 @@
       align-items: center;
     }
 
-    .diff h2 { color: #fff; }
+    .diff h2 { color: var(--text); }
 
-    .diff .lead { color: rgba(255,255,255,0.65); }
+    .diff .lead { color: var(--muted); }
 
     .diff-items {
       display: flex;
@@ -392,7 +394,7 @@
     .diff-num {
       flex-shrink: 0;
       width: 36px; height: 36px;
-      background: var(--orange);
+      background: var(--navy);
       border-radius: 8px;
       display: flex;
       align-items: center;
@@ -406,13 +408,13 @@
     .diff-item-text h4 {
       font-size: 15px;
       font-weight: 500;
-      color: #fff;
+      color: var(--text);
       margin-bottom: 4px;
     }
 
     .diff-item-text p {
       font-size: 14px;
-      color: rgba(255,255,255,0.6);
+      color: var(--muted);
     }
 
     /* ── CONTACT ── */
@@ -771,8 +773,8 @@
     <p class="lead">In 30 minuten is duidelijk hoe uw administratie er nu voor staat en wat er beter kan. Zijn er geen verbeterpunten? Dan hoort u dat ook gewoon. Geen verkoopgesprek, geen verplichtingen.</p>
 
     <div class="contact-box">
-      <a href="tel:0634516266" class="cta-big" style="font-size:22px; letter-spacing:0.02em;">
-        Plan een gratis check van 30 minuten
+      <a href="mailto:info@robuustadvies.nl?subject=Kennismakingsgesprek" class="cta-big" style="font-size:20px; letter-spacing:0.02em;">
+        Stuur een e-mail
       </a>
       <p style="text-align:center; margin-top:16px; font-size:14px; color:var(--muted);">Of bel direct: <a href="tel:0634516266" style="color:var(--orange); text-decoration:none;">06 34 51 62 66</a> · <a href="mailto:info@robuustadvies.nl" style="color:var(--orange); text-decoration:none;">info@robuustadvies.nl</a></p>
       <div class="free-badge" style="margin-top:20px;">
